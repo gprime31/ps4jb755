@@ -1,7 +1,7 @@
 CACHE MANIFEST 
 # v1.0
 
-750.js
+75x.js
 app2usb.js
 app-dumper.js
 backup.js
@@ -19,8 +19,9 @@ jb.js
 kernel-clock.js
 kernel-dumper.js
 mira.js
-mira2.js
-payload755.html
+mira50.js
+mira55.js
+payload.html
 ps4.js
 restore.js
 todex.js
