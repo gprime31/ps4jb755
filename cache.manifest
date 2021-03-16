@@ -19,8 +19,8 @@ jb.js
 kernel-clock.js
 kernel-dumper.js
 mira.js
-mira50.js
-mira55.js
+mira750.js
+mira755.js
 payload.html
 ps4.js
 restore.js
