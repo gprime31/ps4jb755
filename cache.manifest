@@ -7,9 +7,11 @@ app-dumper.js
 backup.js
 binloader.html
 c-code.js
+disable-aslr.js
 disable-updates.js
 enable-browser.js
 enable-updates.js
+fan-control.js
 ftp.js
 history-blocker.js
 img.jpg
@@ -20,9 +22,11 @@ kernel-clock.js
 kernel-dumper.js
 mira.js
 mira750.js
+mira751.js
 mira755.js
 payload.html
 ps4.js
 restore.js
+rif-renamer.js
 todex.js
 utils.js

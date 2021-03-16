@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html manifest="cache.manifest"><head>
-<title>PS4 7.50 - 7.55 Host v1.0 by GamerHack</title>
+<title>PS4 7.50 - 7.55 Host v1.1 by GamerHack</title>
 <style>
 html, body {
 background-image: url('img.jpg');
@@ -58,33 +58,36 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 document.cookie = 'kex=1';
 </script>
 </head>
-<h1 id=msgs>PS4 7.50 - 7.55 Host v1.0 by GamerHack</h1>
+<h1 id=msgs>PS4 7.50 - 7.55 Host v1.1 by GamerHack</h1>
 <hr>
 <br>
 <h1 style="font-size:20px;text-align:center;color:yellow;">You Will Experience Insufficient Memory Problems in the Browser (You Must Insist)</h1>
 <div style="text-align:center">
 <button class="btn btn-main" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_mira750()> MIRA 7.50 </button>
-<button class="btn btn-main" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_mira755()> MIRA 7.55 </button>
-<button class="btn btn-main" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
-<br><br>
+<button class="btn btn-main" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_mira751()> MIRA 7.51 </button>
+<button class="btn btn-main" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_mira755()> MIRA 7.55 </button>
+<br>
 <h1 style="font-size:20px;text-align:center;">Payloads</h1>
 <button class="btn btn-main" onmouseover="todex()" onmouseout="pagetitle()" onclick=load_todex()> ToDex </button>
 <button class="btn btn-main" onmouseover="dumper()" onmouseout="pagetitle()" onclick=load_dumper()> Dumper </button>
 <button class="btn btn-main" onmouseover="ftp()" onmouseout="pagetitle()" onclick=load_ftp()> FTP </button>
+<button class="btn btn-main" onmouseover="app2usb()" onmouseout="pagetitle()" onclick=load_app2usb()> App2USB </button>
 <br>
 <button class="btn btn-main" onmouseover="enableUpdates()" onmouseout="pagetitle()" onclick=load_enablebUpdates()> Enable Updates </button>
 <button class="btn btn-main" onmouseover="disableUpdates()" onmouseout="pagetitle()" onclick=load_disableUpdates()> Disable Updates </button>
-<button class="btn btn-main" onmouseover="app2usb()" onmouseout="pagetitle()" onclick=load_app2usb()> App2USB </button>
-<br>
 <button class="btn btn-main" onmouseover="dbackup()" onmouseout="pagetitle()" onclick=load_dbackup()> DB Backup </button>
 <button class="btn btn-main" onmouseover="dbrestore()" onmouseout="pagetitle()" onclick=load_dbrestore()> DB Restore </button>
-<button class="btn btn-main" onmouseover="historyBlocker()" onmouseout="pagetitle()" onclick=load_historyBlocker()> History Blocker </button>
 <br>
+<button class="btn btn-main" onmouseover="historyBlocker()" onmouseout="pagetitle()" onclick=load_historyBlocker()> History Blocker </button>
 <button class="btn btn-main" onmouseover="ebrowser()" onmouseout="pagetitle()" onclick=load_ebrowser()> Enable Browser </button>
 <button class="btn btn-main" onmouseover="kernelDump()" onmouseout="pagetitle()" onclick=load_kernelDump()> Kernel Dumper </button>
 <button class="btn btn-main" onmouseover="kernelClock()" onmouseout="pagetitle()" onclick=load_kernelClock()> Kernel Clock </button>
-
-<hr style="margin-top: 112px;">
+<br>
+<button class="btn btn-main" onmouseover="binloader()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
+<button class="btn btn-main" onmouseover="disbaslr()" onmouseout="pagetitle()" onclick=load_disbAslr()> Disable ASLR </button>
+<button class="btn btn-main" onmouseover="rifrenamer()" onmouseout="pagetitle()" onclick=load_rifRen()> RIF Renamer </button>
+<button class="btn btn-main" onmouseover="fancontrol()" onmouseout="pagetitle()" onclick=load_fanCtr()> Fan Control </button>
+<hr style="margin-top: 131px;">
 <h1 style="font-size:25px;text-align:center;margin-top: 15px;color:yellow;">Many Thanks to:&nbsp&nbsp<a href="https://twitter.com/sleirsgoevy" style="color:#f31414;">@sleirsgoevy</a>&nbsp&nbsp<a style="color:white;"></style>ChendoChap</a>&nbsp&nbsp<a href="https://twitter.com/_AlAzif" style="color:#f31414;">@_AlAzif</a>&nbsp&nbsp<a style="color:white;"></style>And to all the people who keep the scene alive day after day</a>&nbsp&nbsp</h1>
 <br>
 </div>
@@ -93,10 +96,10 @@ function mainpayload1(){
 document.getElementById("msgs").innerHTML = "MIRA for Firmware 7.50";
 }
 function mainpayload2(){
-document.getElementById("msgs").innerHTML = "MIRA for Firmware 7.55";
+document.getElementById("msgs").innerHTML = "MIRA for Firmware 7.51";
 }
 function mainpayload3(){
-document.getElementById("msgs").innerHTML = "Inject a Payload Using the IP of the console and Port 9020";
+document.getElementById("msgs").innerHTML = "MIRA for Firmware 7.55";
 }
 function todex(){
 document.getElementById("msgs").innerHTML = "Enable Some Debugging Functions Available on TestKit";
@@ -107,14 +110,14 @@ document.getElementById("msgs").innerHTML = "Dump your Games (Necessary a USB Dr
 function ftp(){
 document.getElementById("msgs").innerHTML = "Access this console Through FTP (Be careful what you do)";
 }
+function app2usb(){
+document.getElementById("msgs").innerHTML = "Transfer Games / Apps to USB Drive in exFAT";
+}
 function enableUpdates(){
 document.getElementById("msgs").innerHTML = "Enable System Updates";
 }
 function disableUpdates(){
 document.getElementById("msgs").innerHTML = "Disable System Updates";
-}
-function app2usb(){
-document.getElementById("msgs").innerHTML = "Transfer Games / Apps to USB Drive in exFAT";
 }
 function dbackup(){
 document.getElementById("msgs").innerHTML = "Creates a Backup of the Console Database and Your User on a USB Drive";
@@ -134,8 +137,23 @@ document.getElementById("msgs").innerHTML = "Dump a Conole Kernel to USB Drive";
 function kernelClock(){
 document.getElementById("msgs").innerHTML = "Change the Time for the Console Kernel Clock";
 }
+function binloader(){
+document.getElementById("msgs").innerHTML = "Inject a Payload Using the IP of the console and Port 9020";
+}
+function binloader(){
+document.getElementById("msgs").innerHTML = "Inject a Payload Using the IP of the console and Port 9020";
+}
+function disbaslr(){
+document.getElementById("msgs").innerHTML = "Disables the ASLR (Address space layout randomization)";
+}
+function rifrenamer(){
+document.getElementById("msgs").innerHTML = "Renames 'fake' RIFs to 'free' RIFs";
+}
+function fancontrol(){
+document.getElementById("msgs").innerHTML = "Modify PS4 FAN Speed (Beta)";
+}
 function pagetitle(){
-document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.0 by GamerHack";
+document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.1 by GamerHack";
 }
 
 function load_mira750(){
@@ -145,18 +163,18 @@ function load_mira750(){
         link.href = 'payload.html#f=mira750.js';
         link.click();
 }
+function load_mira751(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=mira751.js';
+        link.click();
+}
 function load_mira755(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'payload.html#f=mira755.js';
-        link.click();
-}
-function load_binloader(){
-
-  var link = document.createElement('a');
-        document.body.appendChild(link);
-        link.href = 'binloader.html';
         link.click();
 }
 function load_todex(){
@@ -180,6 +198,13 @@ function load_ftp(){
         link.href = 'payload.html#f=ftp.js';
         link.click();
 }
+function load_app2usb(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=app2usb.js';
+        link.click();
+}
 function load_enablebUpdates(){
 
   var link = document.createElement('a');
@@ -192,13 +217,6 @@ function load_disableUpdates(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'payload.html#f=disable-updates.js';
-        link.click();
-}
-function load_app2usb(){
-
-  var link = document.createElement('a');
-        document.body.appendChild(link);
-        link.href = 'payload.html#f=app2usb.js';
         link.click();
 }
 function load_dbackup(){
@@ -241,6 +259,34 @@ function load_kernelClock(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'payload.html#f=kernel-clock.js';
+        link.click();
+}
+function load_binloader(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'binloader.html';
+        link.click();
+}
+function load_disbAslr(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=disable-aslr.js';
+        link.click();
+}
+function load_rifRen(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=rif-renamer.js';
+        link.click();
+}
+function load_fanCtr(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=fan-control.js';
         link.click();
 }
 </script>
